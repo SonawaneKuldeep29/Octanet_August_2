@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>To Do List</title>
+     <link rel="stylesheet" href="mystyle.css"/>
+    </head>
+    <body>
+        
+        <div id="heading"><h2>To Do List - Web Project</h2></div>
+        <div id="content">
+            <div id="top">Progress: <meter id="meter" value="0" min="0" max="100" ></meter> <span id="span1"></span> <span id="span2">sort: <select onclick="sort()"><option>Time</option><option>Priority</option><option>Priority & Labels</option><option></option></select></span></div>
+        <div id="section1">
+          <form>
+            <label>Task Name:</label><br><input id="tn" type="text" required/><br><br>
+            <label>Label:</label><br><select id="lab"><option>Add Label</option><option>Content</option><option>Design</option><option>Research</option><option>Meeting</option></select><br><br>
+            <label>Deadline:</label><br><input id="dl" type="date" required/><br><br>
+            <label>Priority:</label><br><select id="pri"><option>High</option><option>Normal</option><option>Low</option></select><br><br>
+            <label>Description:</label><br><textarea id="des"></textarea><br><br>
+            <button type="button" onclick="AddTask()">Add Task</button>
+          </form>
+       </div>
+       <div id="section2">
+        
+       </div>
+       <div><Button id='ud' onclick="callundo()" disabled>Undo</Button></div>
+      </div>
+    </body>
+    
+    <script type="text/javascript" src="myscript.js"></script>
+</html>    
